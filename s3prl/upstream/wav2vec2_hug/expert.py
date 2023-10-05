@@ -25,9 +25,9 @@ class UpstreamExpert(nn.Module):
         super().__init__()
         self.processor = Wav2Vec2Processor.from_pretrained(ckpt)
         self.model = Wav2Vec2Model.from_pretrained(ckpt)
-        #"/home/haoy/da33_scratch/haoy/s3prl/s3prl/upstream/wav2vec2_hug/1e6-large-sumavg-1ep"
-        #"/home/haoy/da33_scratch/haoy/s3prl/s3prl/upstream/wav2vec2_hug/n+mirror-7ep"
-        #"/home/haoy/da33_scratch/haoy/s3prl/s3prl/upstream/wav2vec2_hug/n+mirror-mix-3ep"
+        #".../s3prl/upstream/wav2vec2_hug/1e6-large-sumavg-1ep"
+        #".../s3prl/upstream/wav2vec2_hug/n+mirror-7ep"
+        #".../s3prl/upstream/wav2vec2_hug/n+mirror-mix-3ep"
 
     def get_downsample_rates(self, key: str) -> int:
         return 320
