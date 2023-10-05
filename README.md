@@ -18,7 +18,7 @@ python n_mirror_mix.py
 ```
 After training models, please import them in ***s3prl/upstream/wav2vec2_hug/expert.py***
 ## Fine-tune models on downstream Tasks
-We are following SUPERB setting, please select the downstream tasks according to its structions.
+We are following SUPERB setting, please select the downstream tasks according to its instructions.
 ```
 python3 run_downstream.py -n [output_name] -m train -u wav2vec2_hug_large_ll60k -d [task]
 ```
